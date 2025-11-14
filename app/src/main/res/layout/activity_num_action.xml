@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".NumAction">
+
+    <TextView
+        android:id="@+id/tvNumbersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="تعلم الأرقام!"
+        android:background="@drawable/textview_border"
+        android:textColor="#050505"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/gridNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:columnCount="2"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/btnNumber1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF5722"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFC107"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber3"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4CAF50"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber4"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber5"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#9C27B0"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber6"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF8B00"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber7"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#009688"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber8"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#F44336"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber9"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#3F51B5"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnNumber10"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#607D8B"
+            android:text="10"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+    </GridLayout>
+
+</RelativeLayout>

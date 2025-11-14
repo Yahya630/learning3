@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFDE7"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- الصف الأول -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- عنصر 1 -->
+            <LinearLayout
+                android:id="@+id/arb"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ع"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="حرف عربي"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- عنصر 2 -->
+            <LinearLayout
+                android:id="@+id/eng"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:background="@drawable/item_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="A"
+                    android:textColor="#000000"
+                    android:textSize="64sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English Letter"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- الصف الثاني -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- عنصر 3 -->
+            <LinearLayout
+                android:id="@+id/math"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Math"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تعلم الحساب"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- يمكنك إضافة عنصر آخر هنا إن أردت -->
+        </LinearLayout>
+
+        <!-- الصف الثالث -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- عنصر 5 -->
+            <LinearLayout
+                android:id="@+id/rkn"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📚"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اركان الاسلام و الايمان "
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- عنصر 6 -->
+            <LinearLayout
+                android:id="@+id/open"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🕌"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تعلم الصلاة  "
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- الصف الرابع الجديد -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- عنصر 7 -->
+            <LinearLayout
+                android:id="@+id/item7"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💧"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الوضوء"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- عنصر 8 -->
+            <LinearLayout
+                android:id="@+id/item8"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ﷺ"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اعرف نبيك(ﷺ)"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- الصف الخامس الجديد -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- عنصر 9 -->
+            <LinearLayout
+                android:id="@+id/item9"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🇯🇴"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تحدي الاعلام"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- عنصر 10 -->
+
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

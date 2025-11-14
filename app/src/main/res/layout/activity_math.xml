@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFDE7"
+    tools:context=".math">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="تعلم مع المتعة!"
+            android:background="@drawable/textview_border"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMultiplication"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#4CAF50"
+            android:text="الضرب"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnAdditionSubtraction"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btnMultiplication"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#2196F3"
+            android:text="الجمع والطرح"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnNumbers"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btnAdditionSubtraction"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#FF9800"
+            android:text="تعلم الأرقام"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnInteractiveMode"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btnNumbers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#E91E63"
+            android:text="لعبة الارقام"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnFfff"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btnInteractiveMode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#9C27B0"
+            android:text="طابق الأعداد"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@drawable/background_image"
+    tools:context=".InteractiveModeActivity">
+
+    <TextView
+        android:id="@+id/tvInteractiveTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="لعبة الارقام "
+        android:background="@drawable/textview_border"
+        android:textColor="#070707"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInteractiveTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:text="ابدأ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="استمع واختر الرقم!"
+        android:background="@drawable/textview_border"
+        android:textColor="#090909"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:id="@+id/gridNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:columnCount="2"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/btnNumber1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF5722"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFC107"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber3"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4CAF50"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber4"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber5"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#9C27B0"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber6"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF9800"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber7"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#009688"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber8"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#F44336"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber9"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#3F51B5"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNumber10"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#607D8B"
+            android:text="10"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+    </GridLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimation"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false" />
+
+</RelativeLayout>

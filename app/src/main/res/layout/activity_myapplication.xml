@@ -1,0 +1,222 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFDE7"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خطوات الصلاة"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:background="@drawable/title_background"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step1"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تكبيرة الاحرام" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step2"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قراءة سورة الفاتحة وما تيسر من القران" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step3"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الركوع" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step4"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الوقوف" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step5"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السجدة الأولى" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step6"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الجلوس" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step7"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السجدة الثانية" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step8"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الجلوس الثاني ثم الوقوف" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image9"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/step9"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="التشهد في الركعة الثانية" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

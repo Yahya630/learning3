@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- صورة الخلفية -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/yahya1"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:contentDescription="background"
+        />
+
+    <!-- المحتوى القابل للتمرير -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8dp">
+
+            <!-- العنوان -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مرحبًا بك في عالم التعلم! 🌟"
+                android:background="@drawable/textview_border"
+                android:textSize="28sp"
+                android:textColor="#FF6F00"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:layout_marginBottom="24dp" />
+
+            <!-- سؤال رياضيات بخيارات -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardBackgroundColor="#FFFDE7"
+                card_view:cardElevation="8dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/q1Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🧮 كم ناتج 4 + 6 ؟"
+                        android:textSize="24sp"
+                        android:textColor="#3E2723"
+                        android:textStyle="bold"
+                        android:fontFamily="cursive"
+                        android:layout_marginBottom="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="12dp">
+
+                        <Button
+                            android:id="@+id/q1Option1"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#FFECB3"
+                            android:text="8"
+                            android:textSize="20sp"
+                            android:fontFamily="cursive"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:id="@+id/q1Option2"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#FFECB3"
+                            android:text="10"
+                            android:textSize="20sp"
+                            android:fontFamily="cursive"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:id="@+id/q1Option3"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#FFECB3"
+                            android:text="12"
+                            android:textSize="20sp"
+                            android:fontFamily="cursive"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- سؤال الألوان -->
+            <TextView
+                android:id="@+id/q2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎨 اختر اللون:"
+                android:background="@drawable/textview_border"
+                android:textSize="22sp"
+                android:textColor="#1A237E"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:id="@+id/colorButtonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:weightSum="5">
+
+                <!-- زر اللون 1 -->
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="#F44336"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <!-- زر اللون 2 -->
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="#2196F3"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <!-- زر اللون 3 -->
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="#4CAF50"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <!-- زر اللون 4 -->
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="#FFEB3B"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <!-- زر اللون 5 -->
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="#FF9800"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <!-- سؤال الحرف العربي -->
+            <TextView
+                android:id="@+id/q3Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔠 اختر الحرف: ب"
+                android:background="@drawable/textview_border"
+                android:textSize="22sp"
+                android:textColor="#4E342E"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/arA"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#F8BBD0"
+                    android:text="أ"
+                    android:textSize="26sp"
+                    android:fontFamily="cursive"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/arB"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F8BBD0"
+                    android:text="ب"
+                    android:textSize="26sp"
+                    android:fontFamily="cursive"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- سؤال الحرف الإنجليزي -->
+            <TextView
+                android:id="@+id/q4Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔡 اختر الحرف: A"
+                android:background="@drawable/textview_border"
+                android:textSize="22sp"
+                android:textColor="#1B5E20"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/enA"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#B3E5FC"
+                    android:text="A"
+                    android:textSize="26sp"
+                    android:fontFamily="cursive"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/enB"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#B3E5FC"
+                    android:text="B"
+                    android:textSize="26sp"
+                    android:fontFamily="cursive"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- زر التحقق -->
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅ تحقق من الإجابات"
+                android:textSize="22sp"
+                android:fontFamily="cursive"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="32dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

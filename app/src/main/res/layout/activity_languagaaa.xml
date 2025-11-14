@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yahya1"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:ignore="Orientation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" English Letters"
+        android:textSize="24sp"
+        android:textColor="#050505"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/textview_border"
+        android:padding="12dp" />
+
+    <GridLayout
+        android:id="@+id/lettersGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="6"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        android:padding="4dp">
+
+        <!-- أزرار الحروف الإنجليزية مع الـ IDs -->
+        <Button
+            android:id="@+id/letterA"
+            android:text="A"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336" />
+        <Button
+            android:id="@+id/letterB"
+            android:text="B"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E91E63" />
+        <Button
+            android:id="@+id/letterT"
+            android:text="C"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9C27B0" />
+        <Button
+            android:id="@+id/letterTh"
+            android:text="D"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#673AB7" />
+        <Button
+            android:id="@+id/letterJ"
+            android:text="E"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3F51B5" />
+        <Button
+            android:id="@+id/letterH"
+            android:text="F"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3" />
+        <Button
+            android:id="@+id/letterKh"
+            android:text="G"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#03A9F4" />
+        <Button
+            android:id="@+id/letterD"
+            android:text="H"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00BCD4" />
+        <Button
+            android:id="@+id/letterThal"
+            android:text="I"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#009688" />
+        <Button
+            android:id="@+id/letterR"
+            android:text="J"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50" />
+        <Button
+            android:id="@+id/letterZ"
+            android:text="K"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8BC34A" />
+        <Button
+            android:id="@+id/letterS"
+            android:text="L"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#CDDC39" />
+        <Button
+            android:id="@+id/letterSh"
+            android:text="M"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFEB3B" />
+        <Button
+            android:id="@+id/letterSad"
+            android:text="N"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFC107" />
+        <Button
+            android:id="@+id/letterDad"
+            android:text="O"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800" />
+        <Button
+            android:id="@+id/letterTaa"
+            android:text="P"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF5722" />
+        <Button
+            android:id="@+id/letterZaa"
+            android:text="Q"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#795548" />
+        <Button
+            android:id="@+id/letterAin"
+            android:text="R"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9E9E9E" />
+        <Button
+            android:id="@+id/letterGhain"
+            android:text="S"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#607D8B" />
+        <Button
+            android:id="@+id/letterF"
+            android:text="T"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFB300" />
+        <Button
+            android:id="@+id/letterQ"
+            android:text="U"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C2185B" />
+        <Button
+            android:id="@+id/letterK"
+            android:text="V"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7B1FA2" />
+        <Button
+            android:id="@+id/letterL"
+            android:text="W"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#512DA8" />
+        <Button
+            android:id="@+id/letterM"
+            android:text="X"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1976D2" />
+        <Button
+            android:id="@+id/letterN"
+            android:text="Y"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0097A7" />
+        <Button
+            android:id="@+id/letterHaa"
+            android:text="Z"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C" />
+
+    </GridLayout>
+
+</LinearLayout>

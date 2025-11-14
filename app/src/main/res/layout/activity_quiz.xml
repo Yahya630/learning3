@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/yahya1">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ماهو تاريخ ولادة الرسول ﷺ؟"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ما اسم والدة الرسول ﷺ؟"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="أين ولد الرسول ﷺ؟"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ماهو لقب الرسول ﷺ؟"
+        android:backgroundTint="#9C27B0"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="من هي الزوجة الأولى للرسول ﷺ؟"
+        android:backgroundTint="#E91E63"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="كم كان عمر الرسول ﷺ عندما نزل عليه جبريل؟"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ما اسم الغار الذي كان يتعبد فيه الرسول ﷺ؟"
+        android:backgroundTint="#8BC34A"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="إلى من أرسل الرسول ﷺ؟"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="أي اسم لم يكن من أسماء أولاد الرسول ﷺ؟"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="كم حجة حج الرسول ﷺ؟"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

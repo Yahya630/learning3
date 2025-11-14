@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@drawable/yahya1"
+    android:padding="24dp"
+    app:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:ignore="ExtraText">
+
+        <!-- عنوان الشاشة -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اختر الحرف الصحيح"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#263238"
+            android:background="@drawable/textview_border"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- شريط التقدم -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="100"
+            style="@style/Widget.MaterialComponents.LinearProgressIndicator"
+            app:indicatorColor="@color/green"
+            app:trackColor="@color/gray"
+            app:indeterminateAnimationType="linear"
+            app:showAnimationBehavior="outward"
+            app:hideAnimationBehavior="inward"
+            />
+
+
+
+        <!-- صورة السؤال -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/questionImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imagea"
+                android:scaleType="centerCrop"
+                android:contentDescription="صورة السؤال"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- خيارات الحروف -->
+        <LinearLayout
+            android:id="@+id/optionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <!-- === بطاقة خيار 1 === -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/image8"
+                        android:contentDescription="صورة جمل"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="جمل"
+                        android:textSize="16sp"
+                        android:textColor="#37474F"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ج"
+                        android:textSize="38sp"
+                        android:textStyle="bold"
+                        android:textColor="#1A237E"
+                        android:background="@drawable/letter_border"
+                        android:padding="4dp"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- === بطاقة خيار 2 === -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/image7"
+                        android:contentDescription="صورة تمساح"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تمساح"
+                        android:textSize="16sp"
+                        android:textColor="#37474F"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ت"
+                        android:textSize="38sp"
+                        android:textStyle="bold"
+                        android:textColor="#1A237E"
+                        android:background="@drawable/letter_border"
+                        android:padding="4dp"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- === بطاقة خيار 3 === -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/image5"
+                        android:contentDescription="صورة أسد"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="أسد"
+                        android:textSize="16sp"
+                        android:textColor="#37474F"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="أ"
+                        android:textSize="38sp"
+                        android:textStyle="bold"
+                        android:textColor="#1A237E"
+                        android:background="@drawable/letter_border"
+                        android:padding="4dp"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,157 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yahya1"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أركان الإسلام"
+                android:textSize="26sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="@drawable/textview_border"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btn_shahada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الشهادتان"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_salah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إقامة الصلاة"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_zakat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إيتاء الزكاة"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_sawm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الصوم"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_hajj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="حج البيت لمن استطاع إليه سبيلا"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أركان الإيمان"
+                android:textSize="26sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="@drawable/textview_border"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btn_iman_allah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الإيمان بالله"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_iman_angels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الإيمان بالملائكة"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_iman_books"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الإيمان بالكتب السماوية"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_iman_prophets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الإيمان بالأنبياء والرسل"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_iman_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الإيمان باليوم الآخر"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_iman_qadar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الإيمان بالقضاء والقدر"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

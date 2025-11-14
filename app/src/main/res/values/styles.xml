@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseLetterButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <style name="LetterButtonRed" parent="BaseLetterButton">
+        <item name="android:backgroundTint">#F44336</item>
+    </style>
+    <style name="LetterButtonPink" parent="BaseLetterButton">
+        <item name="android:backgroundTint">#E91E63</item>
+    </style>
+    <style name="LetterButtonPurple" parent="BaseLetterButton">
+        <item name="android:backgroundTint">#9C27B0</item>
+    </style>
+    <style name="LetterButtonIndigo" parent="BaseLetterButton">
+        <item name="android:backgroundTint">#3F51B5</item>
+    </style>
+    <style name="LetterButtonBlue" parent="BaseLetterButton">
+        <item name="android:backgroundTint">#2196F3</item>
+    </style>
+    <!-- أضف باقي الألوان حسب الحاجة بنفس الطريقة -->
+
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_image"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/tvQuestionCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="السؤال 1 من 10"
+            android:background="@drawable/textview_border"
+            android:textColor="#050505"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvQuestionCount"
+            android:layout_marginTop="30dp"
+            android:text="2 × 3 = ?"
+            android:background="@drawable/textview_border"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/optionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQuestion"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/option1"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FF5722"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/option2"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FFC107"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/option3"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#03A9F4"
+                android:text="12"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/optionsLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/refreshAnimationView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/animationView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/yahya1">
+
+    <!-- زر الرجوع -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="رجوع" />
+
+    <!-- زر الممحاة -->
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="ممحاة"
+        android:textColor="#1B1010"
+        android:backgroundTint="#FF6F61"
+        android:background="@drawable/sound_button_border"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- حاوية صورة الحرف + طبقة الرسم -->
+    <FrameLayout
+        android:id="@+id/drawingContainer"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <!-- صورة الحرف -->
+        <ImageView
+            android:id="@+id/letterImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fcba" />
+
+        <!-- طبقة الرسم (تُضاف لاحقاً من الكود) -->
+    </FrameLayout>
+
+    <!-- أزرار التنقل -->
+    <LinearLayout
+        android:id="@+id/navigationButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drawingContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="السابق"
+            android:textColor="#E7E6E6"
+            android:backgroundTint="#01070D"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="التالي"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01070D"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- زر الصوت -->
+    <!-- زر الصوت -->
+    <ImageButton
+        android:id="@+id/playSoundButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/navigationButtons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/sound_button_border"
+        android:padding="6dp"
+        android:src="@drawable/baseline_campaign_24"
+        android:contentDescription="تشغيل الصوت" />
+
+</RelativeLayout>
